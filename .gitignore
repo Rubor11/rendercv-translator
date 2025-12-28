@@ -1,0 +1,19 @@
+# Entorno virtual
+venv/
+*.pyc
+__pycache__/
+
+# YAML de CV
+cv/*.yaml
+!cv/render_example.yaml
+
+# Archivos de traducción generados
+translations/
+
+# Archivos locales de configuración
+*.env
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
