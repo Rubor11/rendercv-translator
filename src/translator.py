@@ -1,6 +1,15 @@
-import requests
+from deep_translator import GoogleTranslator
 
-def translate_text (text, source_lan, target_lan):
+def translate_text(text, source_lang, target_lang):
+    if not text or not text.strip():
+        return text
 
-    return f"[{target_lang}] {text}"
+    try:
+        return GoogleTranslator(
+            source=source_lang,
+            target=target_lang
+        ).translate(text)
 
+    except Exception as e:
+        print(f"[WARN] Translation failed, keeping original text: {e}")
+        return text
