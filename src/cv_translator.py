@@ -60,8 +60,6 @@ def translate_dict(d, source_lan, target_lan):
 
 def main():
     path = input("Insert CV absolut path: ")
-    if not (path):
-        path = "C:/Users/sistemas4/OneDrive - Soho Boutique Hotels/Escritorio/Rubor/rendercv-translator/cv/curriculum.yaml"
     cv_data = load_yaml(path)
 
     source_lan = input("Source CV language (default: en): ") or "en"
