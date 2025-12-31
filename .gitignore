@@ -5,7 +5,7 @@ __pycache__/
 
 # YAML de CV
 cv/*.yaml
-!cv/render_example.yaml
+!cv/sample_rendercv.yaml
 
 # Archivos de traducción generados
 translations/
